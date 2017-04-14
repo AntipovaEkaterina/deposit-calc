@@ -1,4 +1,5 @@
-#include <stdio.h> 
+#include <stdio.h>
+#include "deposit.h"
 
 int check(int sum, int time)
 {
@@ -36,7 +37,7 @@ int main()
 		printf("Input amount of days:");
 		scanf("%d", &time);
 	} 
-	while (check(sum, time)==0);
+	while (check(sum, time) == 0);
 	printf("%.2f\n", calc(sum, time));
 
 return 0;
