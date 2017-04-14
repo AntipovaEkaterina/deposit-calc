@@ -1,5 +1,5 @@
 #ifndef DEPOSIT_H
 #define DEPOSIT_H
-int check(int sum, int time);
-float calc(int sum, int time);
+int check(int, int);
+float calc(int, int);
 #endif
