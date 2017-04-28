@@ -21,7 +21,10 @@ build/test/main.o: test/main.c
 build/test/validation_test.o: test/validation_test.c
 	gcc -I src -I thirdparty -Wall -Werror -c test/validation_test.c -o build/test/validation_test.o
 
-.PHONY: clean
+.PHONY: clean test
+
+test:
+	bin/deposit-calc-test
 
 clean:
 	rm -rf build/test/*.o build/src/*.o bin/deposit-calc bin/deposit-calc-test
